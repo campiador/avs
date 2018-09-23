@@ -1,0 +1,44 @@
+### Starting build.
+# Target: main.ml.depends, tags: { extension:ml, file:main.ml, ocaml, ocamldep, quiet }
+/usr/bin/ocamldep.opt -modules main.ml > main.ml.depends # cached
+# Target: boolean.mli.depends, tags: { extension:mli, file:boolean.mli, ocaml, ocamldep, quiet }
+/usr/bin/ocamldep.opt -modules boolean.mli > boolean.mli.depends # cached
+# Target: boolean.cmi, tags: { byte, compile, extension:mli, file:boolean.mli, interf, ocaml, quiet }
+/usr/bin/ocamlc.opt -c -I /home/behnam/.opam/system/lib/bytes -I /home/behnam/.opam/system/lib/oUnit -I /usr/lib/ocaml -o boolean.cmi boolean.mli # cached
+# Target: bvec.mli.depends, tags: { extension:mli, file:bvec.mli, ocaml, ocamldep, quiet }
+/usr/bin/ocamldep.opt -modules bvec.mli > bvec.mli.depends # cached
+# Target: bvec.cmi, tags: { byte, compile, extension:mli, file:bvec.mli, interf, ocaml, quiet }
+/usr/bin/ocamlc.opt -c -I /home/behnam/.opam/system/lib/bytes -I /home/behnam/.opam/system/lib/oUnit -I /usr/lib/ocaml -o bvec.cmi bvec.mli # cached
+# Target: lambda.mli.depends, tags: { extension:mli, file:lambda.mli, ocaml, ocamldep, quiet }
+/usr/bin/ocamldep.opt -modules lambda.mli > lambda.mli.depends # cached
+# Target: lambda.cmi, tags: { byte, compile, extension:mli, file:lambda.mli, interf, ocaml, quiet }
+/usr/bin/ocamlc.opt -c -I /home/behnam/.opam/system/lib/bytes -I /home/behnam/.opam/system/lib/oUnit -I /usr/lib/ocaml -o lambda.cmi lambda.mli # cached
+# Target: magic.mli.depends, tags: { extension:mli, file:magic.mli, ocaml, ocamldep, quiet }
+/usr/bin/ocamldep.opt -modules magic.mli > magic.mli.depends # cached
+# Target: magic.cmi, tags: { byte, compile, extension:mli, file:magic.mli, interf, ocaml, quiet }
+/usr/bin/ocamlc.opt -c -I /home/behnam/.opam/system/lib/bytes -I /home/behnam/.opam/system/lib/oUnit -I /usr/lib/ocaml -o magic.cmi magic.mli # cached
+# Target: test.ml.depends, tags: { extension:ml, file:test.ml, ocaml, ocamldep, quiet }
+/usr/bin/ocamldep.opt -modules test.ml > test.ml.depends # cached
+# Target: test.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:test.cmo, file:test.ml, implem, ocaml, quiet }
+/usr/bin/ocamlc.opt -c -I /home/behnam/.opam/system/lib/bytes -I /home/behnam/.opam/system/lib/oUnit -I /usr/lib/ocaml -o test.cmo test.ml # cached
+# Target: main.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:main.cmo, file:main.ml, implem, ocaml, quiet }
+/usr/bin/ocamlc.opt -c -I /home/behnam/.opam/system/lib/bytes -I /home/behnam/.opam/system/lib/oUnit -I /usr/lib/ocaml -o main.cmo main.ml # cached
+# Target: boolean.ml.depends, tags: { extension:ml, file:boolean.ml, ocaml, ocamldep, quiet }
+/usr/bin/ocamldep.opt -modules boolean.ml > boolean.ml.depends # cached
+# Target: boolean.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:boolean.cmo, file:boolean.ml, implem, ocaml, quiet }
+/usr/bin/ocamlc.opt -c -I /home/behnam/.opam/system/lib/bytes -I /home/behnam/.opam/system/lib/oUnit -I /usr/lib/ocaml -o boolean.cmo boolean.ml # cached
+# Target: bvec.ml.depends, tags: { extension:ml, file:bvec.ml, ocaml, ocamldep, quiet }
+/usr/bin/ocamldep.opt -modules bvec.ml > bvec.ml.depends # cached
+# Target: bvec.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:bvec.cmo, file:bvec.ml, implem, ocaml, quiet }
+/usr/bin/ocamlc.opt -c -I /home/behnam/.opam/system/lib/bytes -I /home/behnam/.opam/system/lib/oUnit -I /usr/lib/ocaml -o bvec.cmo bvec.ml # cached
+# Target: lambda.ml.depends, tags: { extension:ml, file:lambda.ml, ocaml, ocamldep, quiet }
+/usr/bin/ocamldep.opt -modules lambda.ml > lambda.ml.depends # cached
+# Target: lambda.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:lambda.cmo, file:lambda.ml, implem, ocaml, quiet }
+/usr/bin/ocamlc.opt -c -I /home/behnam/.opam/system/lib/bytes -I /home/behnam/.opam/system/lib/oUnit -I /usr/lib/ocaml -o lambda.cmo lambda.ml # cached
+# Target: magic.ml.depends, tags: { extension:ml, file:magic.ml, ocaml, ocamldep, quiet }
+/usr/bin/ocamldep.opt -modules magic.ml > magic.ml.depends # cached
+# Target: magic.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:magic.cmo, file:magic.ml, implem, ocaml, quiet }
+/usr/bin/ocamlc.opt -c -I /home/behnam/.opam/system/lib/bytes -I /home/behnam/.opam/system/lib/oUnit -I /usr/lib/ocaml -o magic.cmo magic.ml # cached
+# Target: main.byte, tags: { byte, dont_link_with, extension:byte, file:main.byte, link, ocaml, program, quiet }
+/usr/bin/ocamlc.opt -I /home/behnam/.opam/system/lib/bytes -I /home/behnam/.opam/system/lib/oUnit -I /usr/lib/ocaml unix.cma oUnitAdvanced.cma oUnit.cma boolean.cmo bvec.cmo lambda.cmo magic.cmo test.cmo main.cmo -o main.byte # cached
+# Compilation successful.
